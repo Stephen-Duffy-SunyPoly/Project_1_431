@@ -1,4 +1,4 @@
 (executable
  (public_name project)
  (name app)
- (libraries project))
+ (libraries project async))
