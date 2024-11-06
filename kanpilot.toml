@@ -46,3 +46,18 @@ name = "Done"
   checkList = [ "Add Deferred.catch for error handling" ]
   priority = "Medium"
   linkCommits = [ ]
+
+[[processes]]
+id = "process3"
+name = "Done"
+
+  [[processes.tasks]]
+  id = "task4"
+  title = "Testing file processing and error handling"
+  description = "Test the file processing logic, including error handling and concurrent reading."
+  tag = "in-progress"
+  linkFiles = [ ]
+  dueDate = "2024-11-05"
+  checkList = [ "Test file reading with large files", "Test error scenarios (e.g., missing files)" ]
+  priority = "High"
+  linkCommits = [ ]
