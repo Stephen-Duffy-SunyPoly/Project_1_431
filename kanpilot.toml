@@ -6,6 +6,14 @@ skipFiles = [ ".gitignore", "package.json" ]
 id = "process1"
 name = "To Do"
 
+[[processes]]
+id = "process2"
+name = "In Progress"
+
+[[processes]]
+id = "process3"
+name = "Done"
+
   [[processes.tasks]]
   id = "task1"
   title = "Define project structure and file handling approach"
@@ -16,10 +24,6 @@ name = "To Do"
   checkList = [ "Create main file-processing logic", "Handle errors gracefully" ]
   priority = "High"
   linkCommits = [ ]
-
-[[processes]]
-id = "process2"
-name = "In Progress"
 
   [[processes.tasks]]
   id = "task2"
@@ -41,19 +45,4 @@ name = "In Progress"
   dueDate = "2024-11-10"
   checkList = [ "Add Deferred.catch for error handling" ]
   priority = "Medium"
-  linkCommits = [ ]
-
-[[processes]]
-id = "process3"
-name = "Done"
-
-  [[processes.tasks]]
-  id = "task4"
-  title = "Testing file processing and error handling"
-  description = "Test the file processing logic, including error handling and concurrent reading."
-  tag = "in-progress"
-  linkFiles = [ ]
-  dueDate = "2024-11-05"
-  checkList = [ "Test file reading with large files", "Test error scenarios (e.g., missing files)" ]
-  priority = "High"
   linkCommits = [ ]
