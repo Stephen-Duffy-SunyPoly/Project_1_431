@@ -8,17 +8,6 @@ name = "To Do"
 
   [[processes.tasks]]
   id = "task1"
-  title = "Research libraries and tools for file processing"
-  description = "Investigate libraries for concurrent file reading and asynchronous processing in OCaml."
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ "Look into Core library", "Look into Async library" ]
-  priority = "High"
-  linkCommits = [ ]
-
-  [[processes.tasks]]
-  id = "task2"
   title = "Define project structure and file handling approach"
   description = "Define how files will be read, processed, and how errors will be handled."
   tag = "backlog"
@@ -33,7 +22,7 @@ id = "process2"
 name = "In Progress"
 
   [[processes.tasks]]
-  id = "task3"
+  id = "task2"
   title = "Implement file reading and line processing"
   description = "Write the function that reads files concurrently and processes their contents."
   tag = "in-progress"
@@ -44,7 +33,7 @@ name = "In Progress"
   linkCommits = [ ]
 
   [[processes.tasks]]
-  id = "task4"
+  id = "task3"
   title = "Set up error handling for file reading"
   description = "Handle any exceptions that may arise while reading files."
   tag = "in-progress"
@@ -59,7 +48,7 @@ id = "process3"
 name = "Done"
 
   [[processes.tasks]]
-  id = "task5"
+  id = "task4"
   title = "Testing file processing and error handling"
   description = "Test the file processing logic, including error handling and concurrent reading."
   tag = "done"
