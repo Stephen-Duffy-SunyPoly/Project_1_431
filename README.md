@@ -1,2 +1,3 @@
 # Project_1_431
-PROJECT NOT YET ASSIGNED
+
+Make and program a dune OCaml project using the Async library, for concurrency programming.

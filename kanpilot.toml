@@ -1,4 +1,4 @@
-name = "project"
+name = "file-processor"
 skipFolders = [ "node_modules", ".vscode", "out", "dist", ".vscode-test" ]
 skipFiles = [ ".gitignore", "package.json" ]
 
@@ -6,33 +6,58 @@ skipFiles = [ ".gitignore", "package.json" ]
 id = "process1"
 name = "To Do"
 
-  [[processes.tasks]]
-  id = "task1"
-  title = "Determain what to do for project"
-  description = ""
-  tag = "backlog"
-  linkFiles = [ ]
-  dueDate = ""
-  checkList = [ ]
-  priority = ""
-  linkCommits = [ ]
-
 [[processes]]
 id = "process2"
 name = "In Progress"
 
+[[processes]]
+id = "process3"
+name = "Done"
+
   [[processes.tasks]]
-  id = "z6jmzy9tg38h2uvy38mpqtzz"
-  title = "do research"
-  description = ""
-  tag = "backlog"
+  id = "task1"
+  title = "Define project structure and file handling approach"
+  description = "Define how files will be read, processed, and how errors will be handled."
+  tag = "in-progress"
   linkFiles = [ ]
   dueDate = ""
-  checkList = [ ]
-  priority = ""
+  checkList = [ "Create main file-processing logic", "Handle errors gracefully" ]
+  priority = "High"
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "task2"
+  title = "Implement file reading and line processing"
+  description = "Write the function that reads files concurrently and processes their contents."
+  tag = "in-progress"
+  linkFiles = [ ]
+  dueDate = "2024-11-10"
+  checkList = [ "Implement read_file function", "Filter empty lines" ]
+  priority = "Medium"
+  linkCommits = [ ]
+
+  [[processes.tasks]]
+  id = "task3"
+  title = "Set up error handling for file reading"
+  description = "Handle any exceptions that may arise while reading files."
+  tag = "in-progress"
+  linkFiles = [ ]
+  dueDate = "2024-11-10"
+  checkList = [ "Add Deferred.catch for error handling" ]
+  priority = "Medium"
   linkCommits = [ ]
 
 [[processes]]
 id = "process3"
 name = "Done"
-tasks = [ ]
+
+  [[processes.tasks]]
+  id = "task4"
+  title = "Testing file processing and error handling"
+  description = "Test the file processing logic, including error handling and concurrent reading."
+  tag = "in-progress"
+  linkFiles = [ ]
+  dueDate = "2024-11-05"
+  checkList = [ "Test file reading with large files", "Test error scenarios (e.g., missing files)" ]
+  priority = "High"
+  linkCommits = [ ]

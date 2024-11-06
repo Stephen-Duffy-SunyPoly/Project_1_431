@@ -1,5 +1,4 @@
 (executable
  (public_name project)
  (name app)
- (libraries project async)
- (preprocess (pps ppx_let )))
+ (libraries core async))
